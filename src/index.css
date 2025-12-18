@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Import Rubik Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+/* Custom Theme Variables */
+@theme {
+  /* Colors from your design system */
+  --color-blue-950: #242A45;
+  --color-blue-600: #5267DF;
+  --color-red-400: #FA5959;
+  --color-grey-600: #5B6074;
+  --color-grey-50: #F7F7F7;
+  
+  /* Font Family */
+  --font-rubik: 'Rubik', sans-serif;
+  
+  /* Spacing Scale (from your images) */
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1500: 120px;
+  
+  /* Typography (from your images) */
+  --font-size-preset-1: 48px;
+  --line-height-preset-1: 100%;
+  
+  --font-size-preset-2: 32px;
+  --line-height-preset-2: 167%;
+  
+  --font-size-preset-3: 20px;
+  --line-height-preset-3: 167%;
+  
+  --font-size-preset-4: 18px;
+  --line-height-preset-4: 100%;
+  
+  --font-size-preset-5: 16px;
+  --line-height-preset-5: 227%;
+  
+  --font-size-preset-6: 14px;
+  --line-height-preset-6: 200%;
+  
+  --font-size-preset-7: 13px;
+  --line-height-preset-7: 107%;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: var(--font-rubik);
+    background-color: var(--color-grey-50);
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-preset-1 {
+    font-size: var(--font-size-preset-1);
+    line-height: var(--line-height-preset-1);
+    font-weight: 500;
+  }
+  
+  .text-preset-2 {
+    font-size: var(--font-size-preset-2);
+    line-height: var(--line-height-preset-2);
+    font-weight: 500;
+  }
+  
+  .text-preset-3 {
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height-preset-3);
+    font-weight: 500;
+  }
+  
+  .text-preset-4 {
+    font-size: var(--font-size-preset-4);
+    line-height: var(--line-height-preset-4);
+    font-weight: 400;
+  }
+  
+  .text-preset-5 {
+    font-size: var(--font-size-preset-5);
+    line-height: var(--line-height-preset-5);
+    font-weight: 400;
+  }
+  
+  .text-preset-6 {
+    font-size: var(--font-size-preset-6);
+    line-height: var(--line-height-preset-6);
+    font-weight: 500;
+  }
+  
+  .text-preset-7 {
+    font-size: var(--font-size-preset-7);
+    line-height: var(--line-height-preset-7);
+    font-weight: 500;
+  }
+}
